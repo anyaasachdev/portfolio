@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f1e7a7" />
+  <meta name="color-scheme" content="light" />
+  <meta name="author" content="Anyaa Sachdev" />
+  <meta name="description" content="Anyaa Sachdev's interactive engineering and writing portfolio, presented as a customized Mac desktop." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anyaa Sachdev | Engineering Portfolio" />
+  <meta property="og:description" content="Explore Anyaa's engineering projects, experience, writing, awards, and current work through an interactive desktop." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Anyaa Sachdev | Engineering Portfolio" />
+  <meta name="twitter:description" content="An interactive desktop portfolio for engineering projects, writing, awards, and current work." />
+  <title>Anyaa Sachdev | Engineering Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/finder-icon.png" />
+  <link rel="apple-touch-icon" href="assets/finder-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true">
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M17.2 12.6c0-2.6 2.1-3.8 2.2-3.9a4.7 4.7 0 0 0-3.7-2c-1.6-.2-3.1.9-3.9.9-.8 0-2-1-3.4-.9a5 5 0 0 0-4.2 2.6c-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.3 2.5 1.3-.1 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.2-2.5 1-1.4 1.4-2.9 1.4-3-.1 0-3-.9-3-3.9ZM14.7 5c.7-.9 1.2-2.1 1.1-3.3-1.1 0-2.4.7-3.2 1.6-.7.8-1.3 2-1.1 3.2 1.2.1 2.4-.6 3.2-1.5Z"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M2.5 6.8A2.3 2.3 0 0 1 4.8 4.5h5l2 2h7.4a2.3 2.3 0 0 1 2.3 2.3v8.7a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2V6.8Z"/><path d="M2.7 9h18.6" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15.8 7.8-2.3 5.7-5.7 2.3 2.3-5.7 5.7-2.3Z" fill="white"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><rect x="3" y="2.5" width="18" height="19" rx="3"/><path d="M3 7h18M7 11h10M7 14.5h8M7 18h6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><circle cx="12" cy="7" r="5"/><circle cx="17" cy="12" r="5"/><circle cx="12" cy="17" r="5"/><circle cx="7" cy="12" r="5"/><circle cx="12" cy="12" r="2.4" fill="white"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="m6 9 3 3-3 3m5 0h6" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M14.5 6.5v9.1a2.5 2.5 0 1 1-1-2V8.4l5-1.1v6.2a2.5 2.5 0 1 1-1-2V6l-3 .5Z" fill="white"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9.2 9.2 0 0 1 12 0M9.4 16a4.2 4.2 0 0 1 5.2 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="19" r="1"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M12 3.3c-5.1 0-9.2 3.5-9.2 7.8 0 2.4 1.3 4.5 3.4 5.9l-.9 3.7 4-2.2c.9.2 1.8.4 2.8.4 5.1 0 9.2-3.5 9.2-7.8S17.1 3.3 12 3.3Z"/><circle cx="8" cy="11" r="1" fill="white"/><circle cx="12" cy="11" r="1" fill="white"/><circle cx="16" cy="11" r="1" fill="white"/></symbol>
+    <symbol id="i-awards-real" viewBox="0 0 48 48"><defs><linearGradient id="awardG" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd968"/><stop offset="1" stop-color="#d99418"/></linearGradient></defs><rect x="3" y="3" width="42" height="42" rx="10" fill="url(#awardG)"/><path d="M15 9h7l2 11-7 5-2-16Zm18 0h-7l-2 11 7 5 2-16Z" fill="#e8524a"/><circle cx="24" cy="28" r="10" fill="#fff1ad" stroke="#b66b11" stroke-width="1.2"/><path d="m24 21.5 2 4.1 4.5.7-3.3 3.2.8 4.5-4-2.1-4 2.1.8-4.5-3.3-3.2 4.5-.7 2-4.1Z" fill="#d99418"/></symbol>
+    <symbol id="i-finder-real" viewBox="0 0 48 48"><defs><linearGradient id="finderL" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#78c8ff"/><stop offset="1" stop-color="#398dd9"/></linearGradient><linearGradient id="finderR" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d5f2ff"/><stop offset="1" stop-color="#9bd6f8"/></linearGradient></defs><path d="M8 3h16v42H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" fill="url(#finderL)"/><path d="M24 3h16a5 5 0 0 1 5 5v32a5 5 0 0 1-5 5H24V3Z" fill="url(#finderR)"/><path d="M24 3c-1 8-4 15-8 20" fill="none" stroke="#1765a4" stroke-width="1.3"/><path d="M14.5 18v2m18-2v2" stroke="#164f7d" stroke-width="2" stroke-linecap="round"/><path d="M14 31c5 5 15 5 20 0" fill="none" stroke="#174f7b" stroke-width="1.5" stroke-linecap="round"/><path d="M24 21v7h-3" fill="none" stroke="#174f7b" stroke-width="1.3" stroke-linecap="round"/></symbol>
+    <symbol id="i-projects-real" viewBox="0 0 48 48"><path d="M10 11h12l4 4h14a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V15a4 4 0 0 1 4-4Z" fill="#4b9bea" stroke="#c4e4ff" stroke-width="1"/><path d="M6 21h38v18a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V25a4 4 0 0 1 4-4Z" fill="#79bafa"/><path d="M11 7h22v23H11z" fill="#f7fbff" stroke="#9bb4ca"/><path d="M15 12h14M15 17h11M15 22h14" stroke="#6d98bc" stroke-width="1.5"/><path d="M6 24h38v15a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4Z" fill="#5ba5ef"/></symbol>
+    <symbol id="i-safari-real" viewBox="0 0 48 48"><defs><radialGradient id="safariB"><stop stop-color="#73cdf7"/><stop offset="1" stop-color="#1685d0"/></radialGradient></defs><circle cx="24" cy="24" r="21" fill="white"/><circle cx="24" cy="24" r="18.5" fill="url(#safariB)"/><g stroke="white" stroke-width=".8" opacity=".85"><path d="M24 7v4M24 37v4M7 24h4M37 24h4M12 12l3 3M33 33l3 3M36 12l-3 3M15 33l-3 3"/></g><path d="m29.5 17-3.2 9.3-7.8 4.7 3.2-9.3L29.5 17Z" fill="white"/><path d="m29.5 17-3.2 9.3-4.6-4.6 7.8-4.7Z" fill="#ef4b4b"/><circle cx="24" cy="24" r="1.7" fill="#174f79"/></symbol>
+    <symbol id="i-music-real" viewBox="0 0 48 48"><defs><linearGradient id="musicG" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff708a"/><stop offset=".55" stop-color="#ed2d62"/><stop offset="1" stop-color="#c91448"/></linearGradient></defs><rect x="3" y="3" width="42" height="42" rx="10" fill="url(#musicG)"/><path d="M29 12v21.2a5.2 5.2 0 1 1-2.5-4.5V17l11-2.4v14.7a5.2 5.2 0 1 1-2.5-4.5V10.7L29 12Z" fill="white"/></symbol>
+    <symbol id="i-notes-real" viewBox="0 0 48 48"><rect x="3" y="3" width="42" height="42" rx="9" fill="#fff"/><path d="M3 12a9 9 0 0 1 9-9h24a9 9 0 0 1 9 9v3H3v-3Z" fill="#ffd338"/><path d="M10 22h28M10 28h28M10 34h22" stroke="#b9bdc1" stroke-width="1.7"/><path d="M3 15h42" stroke="#e0b71b"/></symbol>
+    <symbol id="i-photos-real" viewBox="0 0 48 48"><rect x="3" y="3" width="42" height="42" rx="10" fill="white"/><g transform="translate(24 24)"><ellipse rx="5" ry="12" transform="rotate(0) translate(0 -9)" fill="#ffcb3c"/><ellipse rx="5" ry="12" transform="rotate(45) translate(0 -9)" fill="#f26d3d"/><ellipse rx="5" ry="12" transform="rotate(90) translate(0 -9)" fill="#e94d7a"/><ellipse rx="5" ry="12" transform="rotate(135) translate(0 -9)" fill="#9d58bd"/><ellipse rx="5" ry="12" transform="rotate(180) translate(0 -9)" fill="#4d76d5"/><ellipse rx="5" ry="12" transform="rotate(225) translate(0 -9)" fill="#39a8db"/><ellipse rx="5" ry="12" transform="rotate(270) translate(0 -9)" fill="#42b969"/><ellipse rx="5" ry="12" transform="rotate(315) translate(0 -9)" fill="#b4c83e"/><circle r="5" fill="white"/></g></symbol>
+  </svg>
+
+  <main class="desktop" id="desktop">
+    <header class="menu-bar">
+      <nav class="menu-left" aria-label="Application menu">
+        <button class="menu-apple" aria-label="Apple menu" data-menu="apple"><svg><use href="#i-apple"/></svg></button>
+        <strong id="active-app">Anyaa’s Portfolio</strong>
+        <button data-menu="file">File</button><button data-menu="edit">Edit</button><button data-menu="view">View</button><button class="desktop-only" data-menu="window">Window</button><button class="desktop-only" data-menu="help">Help</button>
+      </nav>
+      <div class="menu-right">
+        <button aria-label="Wi-Fi" data-menu="wifi"><svg><use href="#i-wifi"/></svg></button>
+        <button aria-label="Search" id="search-trigger"><svg><use href="#i-search"/></svg></button>
+        <time id="clock"></time>
+      </div>
+    </header>
+
+    <section class="desktop-canvas" aria-label="Portfolio desktop">
+      <div class="wallpaper-type" aria-hidden="true"><span>ANYAA</span><span>MAKES</span><span>THINGS.</span></div>
+      <div class="desktop-intro">
+        <span class="portfolio-kicker">ANYAA / PORTFOLIO</span>
+        <p>ECSE ’30 · engineering · writing</p>
+        <span>New York / wherever Wi-Fi works</span>
+      </div>
+
+      <button class="desktop-file engineering-file" data-open="projects" aria-label="Open engineering folder">
+        <span class="folder-art"><svg><use href="#i-folder"/></svg></span>
+        <span>engineering</span>
+      </button>
+      <button class="desktop-file awards-file" data-open="awards" aria-label="Open honors archive">
+        <span class="folder-art gold-folder"><svg><use href="#i-folder"/></svg><i>★</i></span>
+        <span>honors archive</span>
+      </button>
+      <button class="desktop-file writing-file" data-open="writing" aria-label="Open writing folder">
+        <span class="folder-art coral-folder"><svg><use href="#i-folder"/></svg><i>W</i></span>
+        <span>writing</span>
+      </button>
+      <button class="desktop-file semester-file" data-open="notes" aria-label="Open current semester folder">
+        <span class="folder-art lilac-folder"><svg><use href="#i-folder"/></svg><i>NOW</i></span>
+        <span>current semester</span>
+      </button>
+      <button class="desktop-file archive-file" data-open="photos" aria-label="Open camera roll">
+        <span class="polaroid-icon"><i></i></span>
+        <span>camera roll</span>
+      </button>
+      <button class="desktop-file resume-file" data-open="resume" aria-label="Open resume">
+        <span class="pdf-file-icon"><b>PDF</b></span>
+        <span>resume.pdf</span>
+      </button>
+
+      <section class="window active" id="window-about" data-window="about" data-app="Finder" style="--x: 12vw; --y: 11vh; --w: 690px; --h: 480px;">
+        <header class="window-bar">
+          <div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div>
+          <span class="window-title"><svg><use href="#i-folder"/></svg> About</span><span class="bar-spacer"></span>
+        </header>
+        <div class="finder-body">
+          <aside class="finder-sidebar">
+            <p>Favorites</p><button class="selected">⌂&nbsp; About</button><button data-open="projects">▦&nbsp; Projects</button><button data-open="resume">▤&nbsp; Résumé</button><button data-open="awards">★&nbsp; Awards</button><button data-open="writing">⌁&nbsp; Writing</button><button data-open="notes">▤&nbsp; Semester</button>
+            <p>Tags</p><span><i class="tag blue"></i> Building</span><span><i class="tag coral"></i> Writing</span>
+          </aside>
+          <article class="about-content">
+            <div class="intro-label">PROFILE.TXT</div>
+            <div class="eyebrow">RPI / ECSE / CLASS OF 2030</div>
+            <h1>Hi, I’m <mark>Anyaa.</mark></h1>
+            <div class="about-grid">
+              <div><p>I’m pursuing a dual degree in Electrical Engineering and Computer &amp; Systems Engineering at RPI, Class of 2030. I work with <em>The Polytechnic</em> and hold an FCC Technician amateur radio license, callsign <strong>KE2JDL</strong>.</p><div class="identity-tags"><span>ECSE ’30</span><span>THE POLY</span><span>KE2JDL</span><span>NASA HUNCH</span></div></div>
+              <figure class="about-portrait"><img src="assets/anyaa-portrait.png" alt="Portrait of Anyaa Sachdev"><figcaption>ANYAA SACHDEV</figcaption><span>ECSE ’30</span></figure>
+            </div>
+            <div class="about-actions"><button data-open="projects">View projects</button><button data-open="resume">Résumé</button><button data-open="messages">Contact</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="window" id="window-projects" data-window="projects" data-app="Projects" style="--x: 18vw; --y: 14vh; --w: 760px; --h: 520px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">Selected engineering work</span><span class="bar-spacer"></span></header>
+        <div class="project-view window-scroll">
+          <div class="section-heading"><div><span>SELECTED ENGINEERING WORK</span><h2>Selected work.</h2></div><p>Open a project for the system architecture, technical decisions, testing, and results.</p></div>
+          <div class="project-list">
+            <article class="flagship project-index-row"><span class="project-no">01</span><div><h3>Mars Trash Ejector</h3><p>Lead Programmer · NASA HUNCH</p><small>CONTROL SYSTEM · SAFETY INTERLOCKS · SENSOR INTEGRATION · FDR</small></div><div class="project-index-meta"><b>COMPLETED</b><span>2026</span></div><button data-project-detail="mars" aria-label="Open Mars Trash Ejector engineering breakdown">↗</button></article>
+            <article class="completed-project project-index-row"><span class="project-no">02</span><div><h3>AI Tools at OdysseyRe</h3><p>AI Engineering Intern</p><small>LEGAL RISK ASSESSMENT · DATA AUTOMATION · INTERNAL TOOLS</small></div><div class="project-index-meta"><b>COMPLETED</b><span>SUMMER 2025</span></div><button data-project-detail="odyssey" aria-label="Open OdysseyRe AI engineering breakdown">↗</button></article>
+          </div>
+          <section class="project-detail" id="project-detail" hidden><button class="project-back" id="project-back">← All projects</button><div id="project-detail-content"></div></section>
+        </div>
+      </section>
+
+      <section class="window" id="window-awards" data-window="awards" data-app="Awards" style="--x: 16vw; --y: 10vh; --w: 720px; --h: 510px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">Selected honors</span><span class="bar-spacer"></span></header>
+        <div class="awards-view window-scroll">
+          <header><div><span>SELECTED HONORS / 2022-26</span><h2>Selected honors.</h2></div><p>Engineering, computing, debate, academics, and service.</p></header>
+          <div class="awards-grid">
+            <article class="award-featured nasa-award"><span class="award-year">2026 · NASA HUNCH</span><h3>Final Design Review</h3><p>Validated the Mars Trash Ejector across 8 trials, averaging 0.33 m of horizontal travel at 0.91 m/s. Programmed 10 ms hatch-safety monitoring and abort logic. NASA retained the completed prototype.</p><strong>8 TESTS</strong></article>
+            <article><span class="award-year">2025 · COMPUTING</span><h3>International Computer Science Competition Finalist</h3><p>Selected as an international finalist from 3,800+ students through multi-round algorithmic challenges.</p><strong>3,800+</strong></article>
+            <article><span class="award-year">2025 · ROBOTICS</span><h3>FIRST Robotics National Dean’s List Semifinalist</h3><p>Recognized for leadership, technical expertise, and STEM advocacy.</p><strong>TOP 20%</strong></article>
+            <article class="debate-champ"><img src="assets/vld-state-champions-2025.jpg" alt="Anyaa and a fellow debate state champion holding their NYSFL plaques"><div><span class="award-year">2025 · DEBATE</span><h3>VLD New York State Champion</h3><p>First place in Varsity Lincoln-Douglas Debate among 100+ statewide competitors.</p></div><strong>STATE CHAMP</strong></article>
+            <article><span class="award-year">2025 · DEBATE</span><h3>NCFL Grand Nationals, 27th</h3><p>Advanced to Public Forum elimination rounds among more than 160 teams in Chicago with partner Noah Berlin.</p><strong>27 / 160+</strong></article>
+            <article><span class="award-year">2025 · MATHEMATICS</span><h3>Long Island Math Fair Gold Finalist</h3><p>Regional recognition for analysis of chaos theory and nonlinear dynamics.</p><strong>GOLD</strong></article>
+            <article><span class="award-year">2025 · COMMUNITY</span><h3>Town of Huntington Proclamation</h3><p>Municipal recognition for STEM access, mentorship, robotics outreach, and service.</p><strong>HONOREE</strong></article>
+            <article><span class="award-year">2025 · ACADEMICS</span><h3>AP Scholar with Distinction</h3><p>Completed Human Geography, Seminar, Biology, World History, Precalculus, Research, US History, Calculus BC, US Government, Literature, and Chemistry.</p><strong>11 APs</strong></article>
+            <article><span class="award-year">2022-25 · MUSIC</span><h3>NYSCAME All-County</h3><p>Selected for county honor ensembles three times; NYSSMA Level 6 Excellent.</p><strong>3×</strong></article>
+          </div>
+          <p class="awards-foot">Selected high-school honors and distinctions. The work behind them still informs how I build, lead, and communicate now.</p>
+        </div>
+      </section>
+
+      <section class="window" id="window-writing" data-window="writing" data-app="Writing" style="--x: 9vw; --y: 9vh; --w: 740px; --h: 505px;">
+        <header class="window-bar browser-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><button aria-label="Previous article">‹</button><button aria-label="Next article">›</button><div class="address">reader.local/anyaa</div><span class="bar-spacer"></span></header>
+        <div class="writing-view window-scroll"><header><span>WRITING</span><h2>An Ode to You</h2><p>Published book and future essays.</p></header><div class="writing-grid"><article class="book-feature"><div class="book-cover"><span>A BOOK BY</span><h3>AN ODE<br>TO YOU</h3><i>ANYAA SACHDEV</i></div><div><span class="writing-kicker">PUBLISHED BOOK</span><h3>An Ode to You</h3><p>My first published book explores resilience, grief, loss, and purpose.</p><a class="primary-link" href="https://www.amazon.com/Ode-You-Anyaa-Sachdev/dp/B0F1X7HSMZ" target="_blank" rel="noreferrer">View on Amazon ↗</a></div></article><article class="substack-card"><div><span class="writing-kicker">SUBSTACK</span><h3>@anyaasachdev</h3><p>New essays will be published here.</p></div><a href="https://substack.com/@anyaasachdev" target="_blank" rel="noreferrer">Open Substack ↗</a></article></div></div>
+      </section>
+
+      <section class="window" id="window-notes" data-window="notes" data-app="Notes" style="--x: 25vw; --y: 15vh; --w: 610px; --h: 450px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">current semester</span><span class="bar-spacer"></span></header>
+        <div class="notes-view"><aside><button class="selected" data-note="semester"><b>fall semester</b><span>five classes</span></button><button data-note="radio"><b>radio log / ideas</b><span>KE2JDL</span></button><button data-note="poly"><b>story notebook</b><span>The Polytechnic</span></button></aside><article id="note-content"><time>RPI · ECSE ’30</time><h2>Current coursework</h2><p class="note-lede">Five courses across mathematics, computing, electrical engineering, design communication, and songwriting.</p><div class="course-list"><span><b>01</b>Differential Equations</span><span><b>02</b>Introduction to ECSE</span><span><b>03</b>Computer Science I</span><span><b>04</b>Songwriting Workshop</span><span><b>05</b>Engineering Communications / CAD</span></div><p class="note-foot">Rensselaer Polytechnic Institute · Class of 2030</p></article></div>
+      </section>
+
+      <section class="window" id="window-photos" data-window="photos" data-app="Photos" style="--x: 14vw; --y: 10vh; --w: 730px; --h: 510px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">Photo archive</span><span class="bar-spacer"></span></header>
+        <div class="photos-view real-photos window-scroll"><div class="photo-head"><div><span>CAMERA ROLL / 003</span><h2>proof i leave<br>my laptop.</h2></div><p>houston + two debate weekends</p></div><div class="real-photo-grid"><figure class="real-photo"><img src="assets/fdr-team-with-erin-overcash.jpg" alt="Waste of Space team with NASA astronaut Erin Overcash at Final Design Review"><figcaption><b>Final Design Review</b><span>Houston · April 2026</span></figcaption></figure><figure class="real-photo debate-photo"><img src="assets/vld-state-champions-2025.jpg" alt="Anyaa and a fellow debate state champion holding their NYSFL plaques"><figcaption><b>VLD State Champion</b><span>New York · 2025</span></figcaption></figure><figure class="real-photo ncfl-photo"><img src="assets/ncfl-grand-nationals-noah-berlin.jpg" alt="Anyaa Sachdev and Public Forum partner Noah Berlin at NCFL Grand Nationals"><figcaption><b>NCFL Grand Nationals</b><span>Chicago · with Noah Berlin</span></figcaption></figure></div></div>
+      </section>
+
+      <section class="window messages-window" id="window-messages" data-window="messages" data-app="Messages" style="--x: 15vw; --y: 9vh; --w: 720px; --h: 520px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">Messages | ANYAA</span><span class="bar-spacer"></span></header>
+        <div class="messages-view">
+          <aside class="message-sidebar"><div class="message-contact"><span class="avatar avatar-photo"><img src="assets/anyaa-portrait.png" alt=""></span><span><b>Anyaa Sachdev</b><small>choose a topic</small></span></div><nav class="message-topics" aria-label="Message topics"><details open><summary>Engineering</summary><button data-question="nasa">NASA HUNCH</button><button data-question="odyssey">OdysseyRe</button><button data-question="skills">Technical skills</button></details><details><summary>College now</summary><button data-question="study">Dual degree + courses</button><button data-question="now">What I’m doing now</button><button data-question="poly">The Polytechnic</button><button data-question="radio">Amateur radio</button></details><details><summary>Writing</summary><button data-question="writing">An Ode to You</button></details><details><summary>Debate + awards</summary><button data-question="debate">Debate</button><button data-question="ncfl">NCFL Grand Nationals</button><button data-question="awards">Selected awards</button></details><details><summary>About + contact</summary><button data-question="likes">Quick facts</button><button data-question="outside">Outside class</button><button data-question="resume">Résumé</button><button data-question="contact">Contact</button></details></nav></aside>
+          <div class="conversation">
+            <header><span class="avatar large avatar-photo"><img src="assets/anyaa-portrait.png" alt=""></span><b>Anyaa Sachdev</b><small>sachda2@rpi.edu</small></header>
+            <div class="message-thread" id="message-thread" aria-live="polite">
+              <time>Today</time>
+              <div class="bubble incoming">hi! you found the chat :)</div>
+              <div class="bubble incoming">if you’re here for the engineering, start with Projects. otherwise, ask away.</div>
+            </div>
+            <form class="message-composer" id="message-composer"><button type="button" class="composer-plus" aria-label="More options">+</button><input id="message-input" autocomplete="off" placeholder="iMessage" aria-label="Ask Anyaa a question"><button aria-label="Send question">↑</button></form>
+          </div>
+        </div>
+      </section>
+
+      <section class="window" id="window-resume" data-window="resume" data-app="Preview" style="--x: 15vw; --y: 8vh; --w: 720px; --h: 535px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">Anyaa_Sachdev_Resume.pdf</span><span class="bar-spacer"></span></header>
+        <div class="resume-view window-scroll">
+          <header><div><span>ANYAA SACHDEV</span><h2>ECSE student, engineer, and writer.</h2></div><a href="assets/anyaa-sachdev-resume.pdf" target="_blank" rel="noreferrer">Open PDF ↗</a></header>
+          <div class="resume-columns">
+            <main><section><h3>Experience</h3><article><b>AI Engineering Intern</b><span>OdysseyRe · Summer 2025</span><p>Built internal AI tools for legal-risk assessment and data automation. Presented the work to more than 100 engineers and IT staff.</p></article><article><b>Lead Programmer</b><span>NASA HUNCH · 2026</span><p>Developed control logic, safety interlocks, sensor integration, and operator feedback. Advanced to Final Design Review; NASA retained the prototype.</p></article></section><section><h3>Selected work</h3><button data-open="projects">Open engineering case studies →</button></section></main>
+            <aside><section><h3>Education</h3><p><b>Rensselaer Polytechnic Institute</b><br>Dual degree: Electrical Engineering + Computer &amp; Systems Engineering<br>Class of 2030</p></section><section><h3>Current coursework</h3><p>Differential Equations<br>Introduction to ECSE<br>Computer Science I<br>Engineering Communications / CAD<br>Songwriting Workshop</p></section><section><h3>Contact</h3><p><a href="mailto:sachda2@rpi.edu">sachda2@rpi.edu</a><br><a href="https://github.com/anyaasachdev" target="_blank" rel="noreferrer">GitHub</a><br><a href="https://www.linkedin.com/in/anyaasachdev/" target="_blank" rel="noreferrer">LinkedIn</a></p></section></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="window terminal-window" id="window-terminal" data-window="terminal" data-app="Terminal" style="--x: 20vw; --y: 16vh; --w: 660px; --h: 420px;">
+        <header class="window-bar"><div class="traffic-lights"><button class="close" aria-label="Close"></button><button class="minimize" aria-label="Minimize"></button><button class="maximize" aria-label="Maximize"></button></div><span class="window-title">anyaa | zsh</span><span class="bar-spacer"></span></header>
+        <div class="terminal-view"><p>Last login: Wed Sep 17 09:41:18 on ttys001</p><p><b>anyaa@portfolio</b> ~ % whoami</p><div class="terminal-output">Anyaa Sachdev<br>Electrical Engineering + Computer &amp; Systems Engineering · RPI 2030</div><p><b>anyaa@portfolio</b> ~ % cat now.txt</p><div class="terminal-output"><span>campus</span>&nbsp;&nbsp;&nbsp;&nbsp; RPI / The Polytechnic<br><span>radio</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FCC Technician / KE2JDL<br><span>courses</span>&nbsp;&nbsp;&nbsp; Diff Eq / CS I / Intro to ECSE / CAD / Songwriting</div><p><b>anyaa@portfolio</b> ~ % cat stack.txt</p><div class="terminal-output"><span>languages</span>&nbsp;&nbsp; JavaScript / TypeScript / Python<br><span>tools</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Arduino / Raspberry Pi / CAD / Git / Figma</div><p><b>anyaa@portfolio</b> ~ % contact --open</p><div class="terminal-output links"><a href="mailto:sachda2@rpi.edu">sachda2@rpi.edu</a> · <a href="https://github.com/anyaasachdev" target="_blank" rel="noreferrer">github</a> · <a href="https://www.linkedin.com/in/anyaasachdev/" target="_blank" rel="noreferrer">linkedin</a> · <a href="https://substack.com/@anyaasachdev" target="_blank" rel="noreferrer">substack</a></div><p><b>anyaa@portfolio</b> ~ % <i class="cursor"></i></p></div>
+      </section>
+    </section>
+
+    <div class="dock-guide" id="dock-guide" role="status">
+      <span class="guide-spark" data-open="messages"><img src="assets/messages-icon.webp" alt=""></span>
+      <span><small>MESSAGES · NOW</small><b>Anyaa: this desktop is my portfolio. pick an app ↓</b></span>
+      <button aria-label="Dismiss navigation hint">×</button>
+    </div>
+    <nav class="dock" aria-label="Portfolio applications">
+      <button data-open="about" data-label="About" class="running"><span class="dock-icon finder supplied-icon"><img src="assets/finder-icon.png" alt=""></span></button>
+      <button data-open="projects" data-label="Projects"><span class="dock-icon projects supplied-icon"><img src="assets/files-icon.png" alt=""></span></button>
+      <button data-open="awards" data-label="Awards"><span class="dock-icon awards"><svg><use href="#i-awards-real"/></svg></span></button>
+      <button data-open="writing" data-label="Writing"><span class="dock-icon google supplied-icon"><img src="assets/google-icon.webp" alt=""></span></button>
+      <button data-open="notes" data-label="Semester"><span class="dock-icon notes supplied-icon"><img src="assets/notes-icon.png" alt=""></span></button>
+      <button data-open="photos" data-label="Photos"><span class="dock-icon photos supplied-icon"><img src="assets/photos-icon.webp" alt=""></span></button>
+      <button data-open="messages" data-label="Messages"><span class="dock-icon messages supplied-icon"><img src="assets/messages-icon.webp" alt=""></span></button>
+      <i class="dock-divider"></i>
+      <button data-open="terminal" data-label="Terminal"><span class="dock-icon terminal supplied-icon"><img src="assets/terminal-icon.png" alt=""></span></button>
+    </nav>
+    <div class="menu-popover" id="menu-popover" hidden></div>
+    <div class="spotlight" id="spotlight" hidden>
+      <div class="spotlight-box" role="dialog" aria-label="Search portfolio">
+        <div class="spotlight-input"><svg><use href="#i-search"/></svg><input id="spotlight-query" type="search" autocomplete="off" placeholder="Search ANYAA’s portfolio" aria-label="Search ANYAA's portfolio"><kbd>esc</kbd></div>
+        <div class="spotlight-results" id="spotlight-results"></div>
+      </div>
+    </div>
+    <div class="mobile-hint">Tap an icon to open a window</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

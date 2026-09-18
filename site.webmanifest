@@ -1,0 +1,17 @@
+{
+  "name": "Anyaa Sachdev Portfolio",
+  "short_name": "Anyaa",
+  "description": "An interactive engineering and writing portfolio presented as a customized Mac desktop.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f1e7a7",
+  "theme_color": "#f1e7a7",
+  "icons": [
+    {
+      "src": "assets/finder-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
